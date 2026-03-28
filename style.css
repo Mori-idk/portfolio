@@ -1,0 +1,255 @@
+body{
+    background-color: black;
+    /* color: rgb(26, 64, 26); */
+    color: rgb(19, 118, 19);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+h1{
+    color: black;
+    text-shadow:
+     0 0 5px green,
+    0 0 10px green,
+    0 0 20px green,
+    0 0 40px green;
+}
+/* #region index */
+.all{
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 120px;
+
+    /* position: relative; */
+}
+.zdj{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+.logo{
+        top: 0;
+        left: 0;
+        color: lightgreen;
+        margin-left: 20px;
+        position: fixed;
+        font-size: large;
+        font-weight: bold;
+}
+.navi{
+    top: 0;
+    /* left: 0; */
+    margin-left: 20px;
+    position: fixed;
+    font-size: large;
+    font-weight: bold;
+    text-shadow:
+     0 0 5px green,
+    0 0 10px green,
+    0 0 20px green,
+    0 0 40px green;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+}
+.navi a{
+    color: black;
+    text-decoration: none;
+    font-size: x-large;
+    transition: 0.3s;
+}
+a:hover{
+    color: white;
+    /* text-decoration: underline; */
+    transform: scale(1.2);
+}
+nav a.active{
+    color: lightgreen;
+}
+
+.port{
+    width: 800px;
+    height: auto;
+    border-radius: 20px;
+}
+.button {
+    color: rgb(26, 64, 26);
+    text-decoration: none;
+    font-size: x-large;
+    transition: 0.3s;
+    border: 2px solid green;
+    border: 50px;
+}
+
+.linki{
+    display: flex;
+    gap: 40px;
+}
+/* #endregion */
+
+/* #region skills */
+
+.skill{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    justify-items: center;
+}
+
+.inside{
+    border-radius: 30px;
+    text-align: center;
+    width: 100%;          /* zamiast 500px */
+    max-width: 500px;     /* ograniczenie */
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inside:hover{
+    border: 2px solid rgb(26, 64, 26);
+    box-shadow: 0 0 20px green;
+    transform: scale(1);
+    color: white;
+}
+
+
+/* #endregion */
+
+/* #region education  */
+.eduu{
+    width: 900px;
+    height: auto;
+    margin-right: 10px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    border: 2px dotted green;
+    border-radius: 40px;
+    transition: 0.3s;
+    text-align: center;
+    box-shadow: 0 0 20px green;
+    
+}
+.eduu h1{
+    text-align: center;
+}
+
+.eduu:hover{
+    /* transform: scale(1.1); */
+    box-shadow: 0 0 60px grey;
+    color: white;
+    /* box-shadow: 0 0 20px green; */
+}
+
+.unit{
+    width: 200px;
+    height: auto;
+    filter: brightness(40%);
+
+}
+.uni{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: larger;
+}
+
+
+
+
+/* #endregion */
+
+
+/* #region hobby */
+
+.allof{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    /* max-width: 100%; */
+    margin: auto;
+}
+
+.termall{
+    /* display: flex; */
+    flex-direction: row;
+    transition: 0.3s;
+    height: fit-content;
+}
+
+.head{
+    display: flex;
+    gap: 8px;
+    background-color: rgb(26, 64, 26);
+    border: 2px solid green;
+    width: 400px;
+    height: 30px;
+    align-items: center;
+}
+.btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.close { background-color: #910700; }
+.minimize { background-color: #eba100; }
+.maximize { background-color: #009917; }
+
+.close:hover{ background-color: red; box-shadow: 0 0 20px #910700;}
+.minimize:hover{background-color: yellow; box-shadow: 0 0 20px #eba100;}
+.maximize:hover{background-color: greenyellow; box-shadow: 0 0 20px #009917;}
+
+.terminal{
+    width: 400px;
+    border: 2px solid green;
+    
+}
+.terminal p{
+    margin-left: 15px;
+}
+
+.termall:hover{
+    box-shadow: 0 0 40px green;
+    color: lightgrey;
+    /* transform: scale(1.2); */
+}
+.inside h1:hover{
+    color: white;
+}
+
+.typing-animation {
+    color: green;
+    font-weight: bold;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* #endregion */
+
+
+
+
