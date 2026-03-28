@@ -252,4 +252,76 @@ nav a.active{
 
 
 
+/* --- RESPONSYWNOŚĆ--- */
+
+@media (max-width: 1024px) {
+    .all, .skill, .allof {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        margin-top: 100px;
+        padding: 20px;
+        justify-items: center;
+    }
+
+    .port {
+        width: 90%;
+    }
+
+    .eduu {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navi {
+        gap: 15px; 
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    .navi a {
+        font-size: 1rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .all {
+        margin-top: 140px;
+        text-align: center;
+    }
+
+    .linki {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .button {
+        width: 80%;
+        text-align: center;
+    }
+
+    .allof {
+        gap: 30px;
+    }
+
+    .head, .terminal {
+        width: 90vw;
+    }
+    
+    .inside {
+        max-width: 90%; 
+    }
+}
+
+
+
+
+
+
+
+
 
