@@ -333,10 +333,37 @@ nav a.active{
     .head, .terminal {
         width: 95vw; 
     }
+
+
+
+.eduu {
+        width: 90% !important;
+        height: auto;
+        padding: 20px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .eduu p {
+        font-size: 0.9rem; 
+        line-height: 1.5;
+        margin: 5px 0;
+    }
+
+    .uni {
+        font-size: 1.1rem !important;
+        margin-top: 15px !important;
+        display: block;
+    }
+
+    .unit {
+        width: 120px; 
+        margin: 20px auto 0;
+        filter: brightness(60%);
+    }
 }
-
-
-
 
 
 
