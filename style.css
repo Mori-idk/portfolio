@@ -255,65 +255,83 @@ nav a.active{
 /* --- RESPONSYWNOŚĆ--- */
 
 @media (max-width: 1024px) {
-    .all, .skill, .allof {
+    .all {
         grid-template-columns: 1fr;
         margin-left: 0;
-        margin-top: 100px;
+        margin-top: 80px;
         padding: 20px;
-        justify-items: center;
+        display: flex;
+        flex-direction: column-reverse; 
+        align-items: center;
     }
 
     .port {
-        width: 90%;
-    }
-
-    .eduu {
-        width: 95%;
+        width: 80%; 
+        max-width: 400px;
     }
 }
 
 @media (max-width: 768px) {
-    .navi {
-        gap: 15px; 
-        flex-wrap: wrap; 
-        justify-content: center;
-    }
-
-    .navi a {
-        font-size: 1rem;
+    body {
+        display: block; 
     }
 
     .logo {
-        display: none;
+        display: none !important;
+    }
+
+    .navi {
+        position: static; 
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px 0;
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    .navi a {
+        font-size: 1.1rem;
     }
 
     .all {
-        margin-top: 140px;
+        margin-top: 20px; 
+    }
+
+    .welcome {
         text-align: center;
+        padding: 10px;
+    }
+
+    .welcome h1 {
+        font-size: 1.8rem;
     }
 
     .linki {
         flex-direction: column;
-        gap: 15px;
         width: 100%;
         align-items: center;
     }
 
     .button {
-        width: 80%;
+        width: 90%;
         text-align: center;
+        font-size: 1.2rem;
+        padding: 10px;
     }
 
-    .allof {
-        gap: 30px;
+    .port {
+        width: 70%; 
+        margin-bottom: 20px;
     }
 
-    .head, .terminal {
-        width: 90vw;
+   
+    .skill, .allof {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
     }
     
-    .inside {
-        max-width: 90%; 
+    .head, .terminal {
+        width: 95vw; 
     }
 }
 
